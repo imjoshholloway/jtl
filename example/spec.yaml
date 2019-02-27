@@ -1,0 +1,51 @@
+---
+sourcePath: addresses
+targetPath: contact.preferred_addresses
+condition:
+  sourcePath: preferred
+  comparator: "="
+  value: true
+specs:
+  - sourcePath: house_number
+    targetPath: house_number
+
+  - sourcePath: line1
+    targetPath: street
+
+  - sourcePath: city
+    targetPath: city
+---
+sourcePath: addresses
+targetPath: contact.other_addresses
+condition:
+  sourcePath: preferred
+  comparator: "="
+  value: false
+specs:
+  - sourcePath: house_number
+    targetPath: house_number
+
+  - sourcePath: line1
+    targetPath: street
+
+  - sourcePath: city
+    targetPath: city
+---
+sourcePath: addresses
+targetPath: preferred_city
+condition:
+  sourcePath: preferred
+  comparator: "="
+  value: true
+specs:
+  - sourcePath: city
+
+---
+sourcePath: email
+targetPath: contact.email
+---
+sourcePath: name
+targetPath: contact.name
+---
+sourcePath: hobbies
+targetPath: hobbies

@@ -1,0 +1,15 @@
+{
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "addresses": [{
+        "house_number": "10",
+        "line1": "Main Street",
+        "city": "London",
+        "preferred": true
+    }, {
+        "house_number": "250",
+        "line1": "Side street",
+        "city": "Bristol"
+    }],
+    "hobbies": ["Golf", "Swimming", "Walking"]
+}
